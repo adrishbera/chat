@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>AMEDICS Bot</title>
+  <title> AMEDICS Bot </title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -168,7 +168,7 @@
   </div>
 
   <div id="chatpage">
-    <label style="font-weight: bolder; padding-left: 45%;">CLEAR.AI </label>
+    <label style="font-weight: bolder; padding-left: 45%;"> AMEDICS </label>
     <div id="chat"></div>
     <input type="text" id="input" placeholder="Type a message...">
     <button id="button">Send</button>
@@ -217,7 +217,7 @@
           success: function (reply) {
             console.log(reply);
             $('#loader').remove();
-            chat.append('<div><strong>CLEAR.AI Bot:</strong> ' + reply.body + '</div>');
+            chat.append('<div><strong>AMEDICS Bot:</strong> ' + reply.body + '</div>');
             chat.scrollTop(chat.prop('scrollHeight'));
             chatHistory.push({
               speaker: 'assistant',
